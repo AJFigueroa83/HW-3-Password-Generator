@@ -40,7 +40,7 @@ function generatePassword() {
 
 // to verify password length input
   while (passwordLength < 8 || passwordLength > 128) {
-    passwordLength = prompt("How many characters do you want your password to be? \nPassword must be between 8 and 128 characters.");
+    passwordLength = prompt("Password must be between 8 and 128 characters.");
     
     if (passwordLength === null) {
       return "Your secure password";
@@ -65,7 +65,7 @@ function generatePassword() {
         while (pwdCriteria.pwdLength < passwordLength) {
         
           //statement to make sure the user selects at least one of the criteria  
-          if (lowerCase === false && upperCase === false && numbers === false && specialCharacters === false) {
+          if (lowerCase === false && upperCase === false && numbers === false && specialChar === false) {
             alert("You must select at least one criteria of lowercase, uppercase, numbers or special characters")
             showPrompts();
           }
@@ -78,7 +78,7 @@ function generatePassword() {
             }
                 
             if (specialChar === true && pwdCriteria.pwdLength < passwordLength) {
-              var sc = pwdCriteria.pwdCharacter[Math.floor(Math.random() * 17)]
+              var sc = pwdCriteria.pwdSpecialCharacters[Math.floor(Math.random() * 17)]
               result = result + sc;
               pwdCriteria.pwdLength++;
             }
@@ -90,7 +90,7 @@ function generatePassword() {
             }
 
             if (numbers === true && pwdCriteria.pwdLength < passwordLength) {
-              var num = pwdCriteria.pwdNumber[Math.floor(Math.random() * 10)]
+              var num = pwdCriteria.pwdNumbers[Math.floor(Math.random() * 10)]
               result = result + num;
               pwdCriteria.pwdLength++;
             }
