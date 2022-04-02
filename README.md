@@ -17,6 +17,7 @@ This app is intended to simplify the task of thinking up of a strong secure pass
 ## Deployment
 
 Click [here](https://ajfigueroa83.github.io/HW-3-Password-Generator/) to view the page.
+
 #MOCK UP
 
 ![Password Generator window with red button that reads GENERATE PASSWORD](/assets/images/giphy.gif)
