@@ -14,6 +14,9 @@ THEN a random password is generated for me
 
 This app is intended to simplify the task of thinking up of a strong secure password to safeguard your date. In only just a few seconds, after inputing the criteria you would like your passwrd to have, the computer automaticallly generates a secure password for the user.
 
+## Deployment
+
+Click [here](https://ajfigueroa83.github.io/HW-3-Password-Generator/) to view the page.
 #MOCK UP
 
 ![Password Generator window with red button that reads GENERATE PASSWORD](/assets/images/giphy.gif)
